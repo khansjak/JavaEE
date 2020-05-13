@@ -1,0 +1,6 @@
+13:56:49 **** Clean-only build of configuration Debug for project FibonacciProblem ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+rm -rf src/FibonacciProblem.o src/main.o FibonacciProblem.exe src/FibonacciProblem.d src/main.d 
+
+13:56:49 Build Finished. 0 errors, 0 warnings. (took 84ms)
+

@@ -1,0 +1,6 @@
+13:56:49 **** Clean-only build of configuration Debug for project Heaps ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+rm -rf src/main.o src/main.d src/Heap.o src/Heap.d Heaps.exe 
+
+13:56:50 Build Finished. 0 errors, 0 warnings. (took 86ms)
+

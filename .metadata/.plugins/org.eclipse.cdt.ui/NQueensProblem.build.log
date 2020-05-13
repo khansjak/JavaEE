@@ -1,0 +1,6 @@
+13:56:50 **** Clean-only build of configuration Debug for project NQueensProblem ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+rm -rf src/NQueensProblem.o src/NQueensProblem.d src/main.d src/main.o NQueensProblem.exe 
+
+13:56:50 Build Finished. 0 errors, 0 warnings. (took 83ms)
+

@@ -1,0 +1,6 @@
+13:56:50 **** Clean-only build of configuration Debug for project StackLinkedList ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+rm -rf StackLinkedList.exe src/main.o src/main.d 
+
+13:56:50 Build Finished. 0 errors, 0 warnings. (took 89ms)
+

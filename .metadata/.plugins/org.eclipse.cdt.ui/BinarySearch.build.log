@@ -1,0 +1,6 @@
+13:56:49 **** Clean-only build of configuration Debug for project BinarySearch ****
+Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
+rm -rf src/BinarySearch.o BinarySearch.exe src/BinarySearch.d 
+
+13:56:49 Build Finished. 0 errors, 0 warnings. (took 95ms)
+

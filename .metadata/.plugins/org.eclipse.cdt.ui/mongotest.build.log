@@ -1,0 +1,92 @@
+23:32:52 **** Incremental Build of configuration Debug for project mongotest ****
+make all 
+Building file: ../src/mongotest.cpp
+Invoking: Cross G++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/mongotest.d" -MT"src/mongotest.o" -o "src/mongotest.o" "../src/mongotest.cpp"
+In file included from ../src/mongotest.cpp:9:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:215:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iosfwd:90:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/wchar.h:119:
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:98:15: error: unknown type name 'FILE'
+wint_t  fgetwc(FILE *);
+               ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:99:44: error: unknown type name 'FILE'
+wchar_t *fgetws(wchar_t * __restrict, int, FILE * __restrict);
+                                           ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:100:24: error: unknown type name 'FILE'
+wint_t  fputwc(wchar_t, FILE *);
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:101:40: error: unknown type name 'FILE'
+int     fputws(const wchar_t * __restrict, FILE * __restrict);
+                                           ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:102:11: error: unknown type name 'FILE'
+int     fwide(FILE *, int);
+              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:103:14: error: unknown type name 'FILE'
+int     fwprintf(FILE * __restrict, const wchar_t * __restrict, ...);
+                 ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:104:13: error: unknown type name 'FILE'
+int     fwscanf(FILE * __restrict, const wchar_t * __restrict, ...);
+                ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:105:14: error: unknown type name 'FILE'
+wint_t  getwc(FILE *);
+              ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:113:23: error: unknown type name 'FILE'
+wint_t  putwc(wchar_t, FILE *);
+                       ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:117:24: error: unknown type name 'FILE'
+wint_t  ungetwc(wint_t, FILE *);
+                        ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:118:15: error: unknown type name 'FILE'
+int     vfwprintf(FILE * __restrict, const wchar_t * __restrict,
+                  ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:170:14: error: unknown type name 'FILE'
+int     vfwscanf(FILE * __restrict, const wchar_t * __restrict,
+                 ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:205:1: error: unknown type name 'FILE'
+FILE *open_wmemstream(wchar_t ** __bufp, size_t * __sizep) __API_AVAILABLE(macos(10.13), ios(11.0), tvos(11.0), watchos(4.0));
+^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.14.sdk/usr/include/wchar.h:215:18: error: unknown type name 'FILE'
+wchar_t *fgetwln(FILE * __restrict, size_t *) __OSX_AVAILABLE_STARTING(__MAC_10_7, __IPHONE_4_3);
+                 ^
+In file included from ../src/mongotest.cpp:9:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/iostream:38:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/ios:216:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__locale:15:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string:500:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/string_view:176:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__string:56:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:644:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/memory:654:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/typeinfo:61:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/exception:82:
+In file included from /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/cstdlib:86:
+/usr/local/include/stdlib.h:111:82: error: use of undeclared identifier 'labs'; did you mean 'abs'?
+inline _LIBCPP_INLINE_VISIBILITY long      abs(     long __x) _NOEXCEPT {return  labs(__x);}
+                                                                                 ^
+/usr/local/include/stdlib.h:111:44: note: 'abs' declared here
+inline _LIBCPP_INLINE_VISIBILITY long      abs(     long __x) _NOEXCEPT {return  labs(__x);}
+                                           ^
+/usr/local/include/stdlib.h:113:81: error: use of undeclared identifier 'llabs'
+inline _LIBCPP_INLINE_VISIBILITY long long abs(long long __x) _NOEXCEPT {return llabs(__x);}
+                                                                                ^
+/usr/local/include/stdlib.h:116:35: error: unknown type name 'ldiv_t'
+inline _LIBCPP_INLINE_VISIBILITY  ldiv_t div(     long __x,      long __y) _NOEXCEPT {return  ldiv(__x, __y);}
+                                  ^
+/usr/local/include/stdlib.h:116:95: error: use of undeclared identifier 'ldiv'; did you mean 'div'?
+inline _LIBCPP_INLINE_VISIBILITY  ldiv_t div(     long __x,      long __y) _NOEXCEPT {return  ldiv(__x, __y);}
+                                                                                              ^
+/usr/local/include/stdlib.h:116:42: note: 'div' declared here
+inline _LIBCPP_INLINE_VISIBILITY  ldiv_t div(     long __x,      long __y) _NOEXCEPT {return  ldiv(__x, __y);}
+                                         ^
+/usr/local/include/stdlib.h:118:34: error: unknown type name 'lldiv_t'
+inline _LIBCPP_INLINE_VISIBILITY lldiv_t div(long long __x, long long __y) _NOEXCEPT {return lldiv(__x, __y);}
+                                 ^
+fatal error: too many errors emitted, stopping now [-ferror-limit=]
+20 errors generated.
+make: *** [src/mongotest.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+
+23:32:53 Build Failed. 20 errors, 0 warnings. (took 1s.27ms)
+

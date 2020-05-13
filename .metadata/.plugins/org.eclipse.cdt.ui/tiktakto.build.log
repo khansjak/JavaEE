@@ -1,0 +1,7 @@
+13:56:51 **** Clean-only build of configuration Debug for project tiktakto ****
+make clean 
+rm -rf  ./src/tiktakto.o  ./src/tiktakto.d  tiktakto
+ 
+
+13:56:51 Build Finished. 0 errors, 0 warnings. (took 85ms)
+
