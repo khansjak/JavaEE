@@ -1,6 +1,0 @@
-13:56:50 **** Clean-only build of configuration Debug for project Queue ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-rm -rf src/main.o Queue.exe src/main.d 
-
-13:56:50 Build Finished. 0 errors, 0 warnings. (took 87ms)
-

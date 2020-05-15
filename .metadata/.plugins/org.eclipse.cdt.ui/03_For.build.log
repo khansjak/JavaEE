@@ -1,7 +1,0 @@
-13:56:48 **** Clean-only build of configuration Debug for project 03_For ****
-make clean 
-rm -rf  ./src/03_For.o  ./src/03_For.d  03_For
- 
-
-13:56:48 Build Finished. 0 errors, 0 warnings. (took 81ms)
-

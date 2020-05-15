@@ -1,6 +1,0 @@
-13:56:50 **** Clean-only build of configuration Debug for project KnapsackProblem ****
-Info: Configuration "Debug" uses tool-chain "MinGW GCC" that is unsupported on this system, attempting to build anyway.
-rm -rf src/main.d src/main.o KnapsackProblem.exe src/KnapsackProblem.d src/KnapsackProblem.o 
-
-13:56:50 Build Finished. 0 errors, 0 warnings. (took 89ms)
-
