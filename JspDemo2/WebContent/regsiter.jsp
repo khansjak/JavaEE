@@ -25,12 +25,12 @@
 									<option value="UK">UK</option>
 									<option value="OTHERS">OTHERS</option>
 							</select> <br /> <input type="submit" name="register"
-								value="Register Details" /> 
-		<%if(request.getParameter("register")!=null){%>
-			<jsp:useBean id="user" class="com.to.User" scope="request"></jsp:useBean>
-			<jsp:setProperty property="*" name="user"/>
-			<jsp:forward page="RegisterServlet"></jsp:forward>
-		<%}%>
+								value="Register Details" /> <%
+ 	if (request.getParameter("register") != null) {
+ %>
+								<jsp:useBean id="user" class="com.to.User" scope="request"></jsp:useBean>
+								<jsp:setProperty property="*" name="user" /> <jsp:forward
+									page="RegisterServlet"></jsp:forward> <%}%>
 	</form>
 
 </body>
