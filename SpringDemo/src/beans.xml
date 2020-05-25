@@ -1,31 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
            http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="h1" class="com.to.Hello">
-    <!-- collaborators and configuration for this bean go here -->
-    <property name="message" value="Welcome to Spring , its h1!"></property>
-  </bean>
-  
-  <bean id="h2" class="com.to.Hello">
-    <!-- collaborators and configuration for this bean go here -->
-    <property name="message" value="Welcome to Spring , its h2!"></property>
-  </bean>
-  
-  <bean id="e1" class="com.to.Employee">
-    <!-- collaborators and configuration for this bean go here -->
-    <property name="employeeId" value="1234"></property>
-    <property name="employeeName" value="Javed Khan"></property>
-  </bean>
-  
-    <bean id="e2" class="com.to.Employee">
-    <!-- collaborators and configuration for this bean go here -->
-    	<constructor-arg name="employeeId" value="5678"></constructor-arg>
-    	<constructor-arg name="employeeName" value="Parvej Khan"></constructor-arg>
-    </bean>
+	<bean id="h1" class="com.to.Hello">
+		<!-- collaborators and configuration for this bean go here -->
+		<property name="message" value="Welcome to Spring , its h1!"></property>
+	</bean>
 
-  <!-- more bean definitions go here -->
+	<bean id="h2" class="com.to.Hello">
+		<!-- collaborators and configuration for this bean go here -->
+		<property name="message" value="Welcome to Spring , its h2!"></property>
+	</bean>
+
+	<bean id="e1" class="com.to.Employee">
+		<!-- collaborators and configuration for this bean go here -->
+		<property name="employeeId" value="1234"></property>
+		<property name="employeeName" value="Javed Khan"></property>
+	</bean>
+
+	<bean id="e2" class="com.to.Employee">
+		<!-- collaborators and configuration for this bean go here -->
+		<constructor-arg name="employeeId" value="5678"></constructor-arg>
+		<constructor-arg name="employeeName"
+			value="Parvej Khan"></constructor-arg>
+	</bean>
+
+	<!-- more bean definitions go here -->
 
 </beans>
