@@ -15,7 +15,7 @@ public class DeleteEmployeeRecords {
 			
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/simplilearn","root","Jak@2019");
-			//Statement stmt = conn.createStatement();
+			
 			PreparedStatement stmt = conn.prepareStatement("delete from employee where EmpId=?");
 			stmt.setInt(1,empid );
 			int  rows = stmt.executeUpdate();
