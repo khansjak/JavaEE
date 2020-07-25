@@ -75,6 +75,7 @@ public class UserDAO {
 	
 	//Select
 	public User selectUser(int id) throws SQLException {
+		
 		User user = new User();
 		Connection conn = getConnection();
 		PreparedStatement stmt = conn.prepareStatement(selectUserSQL);
@@ -104,6 +105,7 @@ public class UserDAO {
 			user.setName(rs.getString(2));
 			user.setEmail(rs.getString(3));
 			user.setCountry(rs.getString(4));
+			System.out.println("Hello");
 			userList.add(user);
 		}
 		return userList;
