@@ -15,7 +15,9 @@
 		<property name="show_sql">true</property>
 		<property name="hbm2ddl.auto">update</property>
 		<property name="hibernate.connection.provider_disables_autocommit">true</property>
-		<mapping  class="com.jak.beans.Student"></mapping>
+		<!--  <mapping  class="com.jak.beans.Student"></mapping>-->
+		<mapping  class="com.jak.OneToManyRelationship.Stock"></mapping>
+		<mapping  class="com.jak.OneToManyRelationship.StockDailyRecord"></mapping>
 		
 	</session-factory>
 </hibernate-configuration>
