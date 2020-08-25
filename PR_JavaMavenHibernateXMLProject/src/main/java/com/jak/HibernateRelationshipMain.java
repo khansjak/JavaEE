@@ -30,7 +30,9 @@ public class HibernateRelationshipMain {
 		
 		Session session = HibernateUtil.getSessionFactory().openSession();
 		session.beginTransaction();
+		
 		session.save(stock);
+		
 		stockDailyRecord1.setStock(stock);
 		stockDailyRecord2.setStock(stock);
 		session.save(stockDailyRecord1);
