@@ -7,14 +7,19 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
 </head>
 <body>
-	<table>
+	<div class="container">
+		<br/>
+		<br/>
+		<a href="new" class="btn btn-secondary">Add New User</a>
+		<table class="table">
 		<thead>
 		<tr>
-			<th>Id</th>
+			<th>ID</th>
 			<th>Name</th>
-			<th>mail</th>
+			<th>Email</th>
 			<th>Country</th>
 
 		</tr>		
@@ -31,5 +36,6 @@
 			</c:forEach>
 		</tbody>
 	</table>
+	</div>
 </body>
 </html>
