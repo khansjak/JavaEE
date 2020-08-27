@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
 import com.jak.model.User;
 import com.jak.usermanagement.dao.UserDAO;
 
-
+@WebServlet("/")
 public class UsrServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
@@ -29,7 +30,13 @@ public class UsrServlet extends HttpServlet {
 		try {
 			switch(action) {
 			case "/new":
-				newUser(request,response);
+				newUserForm(request, response);
+				break;
+			case "/insertUser":
+				insertUser(request,response);
+				break;
+			case "list":
+				listUser(request, response);
 				break;
 				
 			default:
@@ -42,11 +49,26 @@ public class UsrServlet extends HttpServlet {
 		}
 	}
 
-	private void newUser(HttpServletRequest request, HttpServletResponse response) {
-		System.out.println("I clicked the new user button");
+
+
+
+	private void insertUser(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		User user = new User();
+		user.setName(request.getParameter("name"));
+		user.setMail(request.getParameter("email"));
+		user.setCountry(request.getParameter("country"));
+		userDao.saveUser(user);
+		response.sendRedirect("list");
 		
 	}
 
+	private void newUserForm(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		System.out.println("I Clicked the new form creation link");
+		RequestDispatcher dispatcher = request.getRequestDispatcher("user-form.jsp");
+		dispatcher.forward(request, response);
+
+	}
 
 	private void listUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		List<User> listUser=userDao.getAllUser();
