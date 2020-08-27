@@ -29,7 +29,7 @@ public class UsrServlet extends HttpServlet {
 		try {
 			switch(action) {
 			case "/new":
-				newUser();
+				newUser(request,response);
 				break;
 				
 			default:
@@ -42,9 +42,11 @@ public class UsrServlet extends HttpServlet {
 		}
 	}
 
-	private void newUser() {
+	private void newUser(HttpServletRequest request, HttpServletResponse response) {
+		System.out.println("I clicked the new user button");
 		
 	}
+
 
 	private void listUser(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		List<User> listUser=userDao.getAllUser();
